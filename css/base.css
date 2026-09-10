@@ -1,12 +1,16 @@
+/* -------- base css  -------- */
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  min-width: 1440px;
 }
 h1, h2, h3, h4, h5, h6 {
   color:#2F281E;
 }
+
+/* -------- header + nav  -------- */
 header {
   display: flex;
   align-items: center;
@@ -39,19 +43,55 @@ nav > a {
   justify-self: flex-end;
   font-size: 16px;
   font-weight: 600;
-  width: 102px;
-  height: 46px;
+  min-width: 102px;
+  max-height: 53px;
+  padding: 1em;
   border-radius: 4px;
+  background-color: #FF9900;
+  color: #fff;
+  border: none;
 }
-.btn__sign--in {
+.btn__sign-in {
   background-color: #fff;
   border: 1px solid #BCD0E5;
   color: #173A56;
   margin-left: 3em;
 }
-.btn__sign--up {
-  background-color: #FF9900;
-  color: #fff;
-  border: none;
+
+/* -------- hero section  -------- */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1125px;
+  margin-top: 30px;
+  padding: 2em;
+  /* border: 2px dashed green; */
+}
+.hero__content {
+  width: 518px;
+  margin-right: 1em;
+  /* border: 2px solid blue; */
+}
+.hero__title {
+  font-size: 44px;
+  font-weight: 700;
+}
+.hero__desc {
+  font-size: 18px;
+}
+.hero__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 45px;
+  width: 60%;
+  /* border: 2px dotted red;  */
+}
+.hero__watch-video {
+  color: #FF9900;
+  font-weight: 600;
+  justify-self: flex-end;
 }
 
+/* -------- next section  -------- */
