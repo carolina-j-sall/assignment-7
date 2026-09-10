@@ -8,6 +8,14 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   color:#2F281E;
+  line-height: 1.3;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1125px;
+  padding: 2em;
 }
 
 /* -------- header + nav  -------- */
@@ -94,4 +102,49 @@ nav > a {
   justify-self: flex-end;
 }
 
-/* -------- next section  -------- */
+/* -------- usps section  -------- */
+.usps {
+  flex-direction: column;
+  width: 90%;
+}
+.usps__title {
+  justify-items: center;
+  text-align: center;
+  width: 535px;
+  margin-bottom: 54px;
+}
+.usps__list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 84%;
+  list-style: none;
+  padding: 0;
+  padding-bottom: 34px;
+}
+.usp__item {
+  width: 240px;
+}
+.usp__icon {
+  padding: 0.8em;
+  border-radius: 19px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.usp__icon--purple {
+  background-color: #7752BE;
+}
+.usp__icon--yellow {
+  background-color: #FAB005;
+}
+.usp__icon--red {
+  background-color: #F03E3D;
+}
+.usp__icon--blue {
+  background-color: #4DADF7;
+}
+.usp__item-title {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 13px;
+}
